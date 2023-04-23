@@ -1,0 +1,36 @@
+{
+  "name": "tick-tick-tick",
+  "version": "1.0.0",
+  "description": "tick",
+  "main": "index.js",
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "scripts": {
+    "build": "tsc && node dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MR-Addict/tick-tick-tick.git"
+  },
+  "keywords": [
+    "tick"
+  ],
+  "author": "MR-Addict",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MR-Addict/tick-tick-tick/issues"
+  },
+  "homepage": "https://github.com/MR-Addict/tick-tick-tick#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
+    "module-alias": "^2.2.2",
+    "mongodb": "^5.3.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4",
+    "zod": "^3.21.4"
+  }
+}
