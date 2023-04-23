@@ -6,7 +6,7 @@ import clientPromise from "./clientPromise";
 async function query() {
   try {
     const client = await clientPromise;
-    const collection = client.db("log").collection("glados");
+    const collection = client.db("log").collection("tick");
 
     const result = await collection.find({}).sort({ date: -1 }).toArray();
     const data = z.array(Tick).parse(result);
