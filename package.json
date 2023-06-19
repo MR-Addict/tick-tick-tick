@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc && node dist/index.js",
-    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\""
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
+    "format": "prettier --plugin-search-dir . --write ."
   },
   "repository": {
     "type": "git",
@@ -24,12 +25,14 @@
   },
   "homepage": "https://github.com/MR-Addict/tick-tick-tick#readme",
   "devDependencies": {
+    "@types/asciichart": "^1.5.6",
     "@types/node": "^18.15.13",
+    "asciichart": "^1.5.25",
     "concurrently": "^8.0.1",
     "dotenv": "^16.0.3",
     "module-alias": "^2.2.2",
-    "mongodb": "^5.3.0",
     "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
     "typescript": "^5.0.4",
     "zod": "^3.21.4"
   }
